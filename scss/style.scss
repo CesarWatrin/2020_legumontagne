@@ -9,6 +9,7 @@ a {
 
 .filtre_vert {
    background-color: rgba(33,55,1,0.7);
+   filter: contrast(150%);
 
    .contact {
       display: flex;
@@ -93,5 +94,98 @@ a {
       background-color: #F7CB06;
       height: 30px;
       width: 50%;
+   }
+}
+
+.all_news {
+   display: flex;
+   justify-content: center;
+
+   .actu_legumes {
+      width: 49%;
+
+      .news_legumes {
+         display: flex;
+         justify-content: center;
+
+         h2 {
+            padding-top: 10px;
+         }
+      }
+
+      .tomates {
+         display: flex;
+         justify-content: center;
+      }
+
+      .fete {
+         display: flex;
+         justify-content: center;
+      }
+   }
+
+   .actu_pain {
+      width: 49%;
+
+      .news_pain {
+         display: flex;
+         justify-content: center;
+
+         h2 {
+            padding-top: 10px;
+         }
+      }
+
+      .pain {
+         display: flex;
+         justify-content: center;
+      }
+   }
+
+   .texte_actu {
+      width: 300px;
+      padding: 5px;
+      text-align: justify;
+   }
+}
+
+#legumes {
+   height: 50px;
+   background-color: #7AB51D;
+   overflow: hidden;
+
+   p {
+      width: 110%;
+      display: block;
+      line-height: 50px;
+      color: rgba(255, 255, 255, 0.4);
+      animation-duration: 10s;
+      animation-name: defilementrtl;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+   }
+
+   @keyframes defilementrtl {
+      0% {
+         transform: translate3d(0,0,0);      /* position initiale à droite */
+      }
+      50% {
+         transform: translate3d(-10%,0,0);
+      }
+      100% {
+         transform: translate3d(0,0,0);  /* position finale à gauche */
+      }
+   }
+
+   @function ajoute($text) {
+      @for $i from 0 through 4 {
+         $text: $text + $text;
+      }
+      $resultat: $text;
+      @return $resultat;
+   }
+
+   p:before {
+      content: ajoute(" Légumes de saison -");
    }
 }
