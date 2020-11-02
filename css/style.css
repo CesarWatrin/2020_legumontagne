@@ -1,212 +1,330 @@
 @charset "UTF-8";
-/* line 5, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-a {
-  text-decoration: none;
-  color: black;
+@media screen and (min-width: 800px) {
+  /* line 9, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  /* line 14, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .filtre_vert {
+    background-color: rgba(33, 55, 1, 0.7);
+    filter: contrast(150%);
+  }
+  /* line 18, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .filtre_vert .contact {
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+  }
+  /* line 23, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .filtre_vert .contact div {
+    padding-right: 20px;
+  }
+  /* line 26, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .filtre_vert .contact div a {
+    color: white;
+  }
+  /* line 32, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .filtre_vert .logo {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 37, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .filtre_vert .titre_logo {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 41, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .filtre_vert .titre_logo div {
+    margin-top: -10px;
+    color: white;
+  }
+  /* line 48, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .jaune_vert_menu {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+  }
+  /* line 53, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .jaune_vert_menu h2 {
+    line-height: 50px;
+    font-size: 20px;
+  }
+  /* line 58, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .jaune_vert_menu .cadre_jaune_menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #F7CB06;
+  }
+  /* line 65, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .jaune_vert_menu img {
+    width: 42px;
+  }
+  /* line 69, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .jaune_vert_menu .cadre_vert_menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #7AB51D;
+  }
+  /* line 79, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .img_bg div {
+    display: flex;
+    position: relative;
+    bottom: 155px;
+    z-index: -1;
+    margin-bottom: -155px;
+  }
+  /* line 88, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .row {
+    display: flex;
+  }
+  /* line 91, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .row .cadre_vert {
+    background-color: #7AB51D;
+    height: 30px;
+    width: 50%;
+  }
+  /* line 97, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .row .cadre_jaune {
+    background-color: #F7CB06;
+    height: 30px;
+    width: 50%;
+  }
+  /* line 104, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 108, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news .actu_legumes {
+    width: 49%;
+  }
+  /* line 111, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news .actu_legumes .news_legumes {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 115, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news .actu_legumes .news_legumes h2 {
+    padding-top: 10px;
+  }
+  /* line 120, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news .actu_legumes .tomates {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 125, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news .actu_legumes .fete {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 131, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news .actu_pain {
+    width: 49%;
+  }
+  /* line 134, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news .actu_pain .news_pain {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 138, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news .actu_pain .news_pain h2 {
+    padding-top: 10px;
+  }
+  /* line 143, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news .actu_pain .pain {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 149, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_news .texte_actu {
+    width: 300px;
+    padding: 5px;
+    text-align: justify;
+  }
+  /* line 189, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  #legumes {
+    height: 50px;
+    background-color: #7AB51D;
+    overflow: hidden;
+  }
+  /* line 157, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  #legumes p {
+    width: 110%;
+    display: block;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.4);
+    animation-duration: 10s;
+    animation-name: defilement;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes defilement {
+    0% {
+      transform: translate3d(0, 0, 0);
+      /* position initiale à droite */
+    }
+    50% {
+      transform: translate3d(-10%, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      /* position finale à gauche */
+    }
+  }
+  /* line 196, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  #legumes p:before {
+    content: " Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison -";
+  }
+  /* line 201, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_legumes {
+    display: flex;
+  }
+  /* line 204, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_legumes .jacques {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    width: 50%;
+  }
+  /* line 213, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_legumes .jacques .jacques_title {
+    text-align: center;
+  }
+  /* line 216, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_legumes .jacques .jacques_title h2 {
+    background-color: #7AB51D;
+  }
+  /* line 221, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_legumes .jacques .jacques_image {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  /* line 226, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_legumes .jacques .jacques_text {
+    text-align: left;
+  }
+  /* line 231, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_legumes .carousel_legume {
+    width: 50%;
+    background-image: url("../img/slide-legume1.jpg");
+    background-repeat: round;
+  }
+  /* line 235, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_legumes .carousel_legume div {
+    text-align: center;
+    position: relative;
+  }
+  /* line 239, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  .all_legumes .carousel_legume div h5 {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: white;
+    background-color: #7AB51D;
+    width: 200px;
+    font-size: 18px;
+  }
+  /* line 252, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  #pain {
+    height: 50px;
+    background-color: #F7CB06;
+    overflow: hidden;
+  }
+  /* line 157, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  #pain p {
+    width: 110%;
+    display: block;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.4);
+    animation-duration: 10s;
+    animation-name: defilement;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes defilement {
+    0% {
+      transform: translate3d(0, 0, 0);
+      /* position initiale à droite */
+    }
+    50% {
+      transform: translate3d(-10%, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      /* position finale à gauche */
+    }
+  }
+  /* line 259, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+  #pain p:before {
+    content: " Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain - Pain au levain -";
+  }
 }
 
-/* line 10, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.filtre_vert {
-  background-color: rgba(33, 55, 1, 0.7);
-  filter: contrast(150%);
-}
-
-/* line 14, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.filtre_vert .contact {
+/* line 265, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+.all_pain {
   display: flex;
-  justify-content: flex-end;
-  height: 20px;
 }
 
-/* line 19, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.filtre_vert .contact div {
-  padding-right: 20px;
-}
-
-/* line 22, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.filtre_vert .contact div a {
-  color: white;
-}
-
-/* line 28, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.filtre_vert .logo {
+/* line 268, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+.all_pain .jean {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  width: 50%;
 }
 
-/* line 33, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.filtre_vert .titre_logo {
-  display: flex;
-  justify-content: center;
+/* line 277, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+.all_pain .jean .jean_title {
+  text-align: center;
 }
 
-/* line 37, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.filtre_vert .titre_logo div {
-  margin-top: -10px;
-  color: white;
-}
-
-/* line 44, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.jaune_vert_menu {
-  display: flex;
-  justify-content: space-around;
-  height: 50px;
-}
-
-/* line 49, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.jaune_vert_menu h2 {
-  line-height: 50px;
-  font-size: 20px;
-}
-
-/* line 54, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.jaune_vert_menu .cadre_jaune_menu {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+/* line 280, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+.all_pain .jean .jean_title h2 {
   background-color: #F7CB06;
 }
 
-/* line 61, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.jaune_vert_menu img {
-  width: 42px;
+/* line 285, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+.all_pain .jean .jean_image {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-/* line 65, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.jaune_vert_menu .cadre_vert_menu {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #7AB51D;
+/* line 290, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+.all_pain .jean .jean_text {
+  text-align: left;
 }
 
-/* line 75, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.img_bg div {
-  display: flex;
+/* line 295, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+.all_pain .carousel_pain {
+  width: 50%;
+  background-image: url("../img/slide-pain1.jpg");
+  background-repeat: round;
+}
+
+/* line 299, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+.all_pain .carousel_pain div {
+  text-align: center;
   position: relative;
-  bottom: 155px;
-  z-index: -1;
-  margin-bottom: -155px;
 }
 
-/* line 84, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.row {
-  display: flex;
-}
-
-/* line 87, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.row .cadre_vert {
-  background-color: #7AB51D;
-  height: 30px;
-  width: 50%;
-}
-
-/* line 93, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.row .cadre_jaune {
+/* line 303, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
+.all_pain .carousel_pain div h5 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: white;
   background-color: #F7CB06;
-  height: 30px;
-  width: 50%;
-}
-
-/* line 100, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news {
-  display: flex;
-  justify-content: center;
-}
-
-/* line 104, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news .actu_legumes {
-  width: 49%;
-}
-
-/* line 107, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news .actu_legumes .news_legumes {
-  display: flex;
-  justify-content: center;
-}
-
-/* line 111, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news .actu_legumes .news_legumes h2 {
-  padding-top: 10px;
-}
-
-/* line 116, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news .actu_legumes .tomates {
-  display: flex;
-  justify-content: center;
-}
-
-/* line 121, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news .actu_legumes .fete {
-  display: flex;
-  justify-content: center;
-}
-
-/* line 127, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news .actu_pain {
-  width: 49%;
-}
-
-/* line 130, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news .actu_pain .news_pain {
-  display: flex;
-  justify-content: center;
-}
-
-/* line 134, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news .actu_pain .news_pain h2 {
-  padding-top: 10px;
-}
-
-/* line 139, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news .actu_pain .pain {
-  display: flex;
-  justify-content: center;
-}
-
-/* line 145, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-.all_news .texte_actu {
-  width: 300px;
-  padding: 5px;
-  text-align: justify;
-}
-
-/* line 152, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-#legumes {
-  height: 50px;
-  background-color: #7AB51D;
-  overflow: hidden;
-}
-
-/* line 157, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-#legumes p {
-  width: 110%;
-  display: block;
-  line-height: 50px;
-  color: rgba(255, 255, 255, 0.4);
-  animation-duration: 10s;
-  animation-name: defilementrtl;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes defilementrtl {
-  0% {
-    transform: translate3d(0, 0, 0);
-    /* position initiale à droite */
-  }
-  50% {
-    transform: translate3d(-10%, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-    /* position finale à gauche */
-  }
-}
-
-/* line 188, ../César/Documents/MIW/Integration/github/2020_legumontagne/scss/style.scss */
-#legumes p:before {
-  content: " Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison - Légumes de saison -";
+  width: 200px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

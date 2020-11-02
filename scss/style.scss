@@ -1,179 +1,180 @@
+$vert: #7AB51D;
+$jaune: #F7CB06;
+
 div {
    // border: 1px solid gray;
 }
 
-a {
-   text-decoration: none;
-   color: black;
-}
+@media screen and (min-width: 800px) {
+   a {
+      text-decoration: none;
+      color: black;
+   }
 
-.filtre_vert {
-   background-color: rgba(33,55,1,0.7);
-   filter: contrast(150%);
+   .filtre_vert {
+      background-color: rgba(33,55,1,0.7);
+      filter: contrast(150%);
 
-   .contact {
-      display: flex;
-      justify-content: flex-end;
-      height: 20px;
+      .contact {
+         display: flex;
+         justify-content: flex-end;
+         height: 20px;
 
-      div {
-         padding-right: 20px;
+         div {
+            padding-right: 20px;
 
-         a {
+            a {
+               color: white;
+            }
+         }
+      }
+
+      .logo {
+         display: flex;
+         justify-content: center;
+      }
+
+      .titre_logo {
+         display: flex;
+         justify-content: center;
+
+         div {
+            margin-top: -10px;
             color: white;
          }
       }
    }
 
-   .logo {
+   .jaune_vert_menu {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
+      height: 50px;
+
+      h2 {
+         line-height: 50px;
+         font-size: 20px;
+      }
+
+      .cadre_jaune_menu {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         background-color: $jaune;
+      }
+
+      img {
+         width: 42px;
+      }
+
+      .cadre_vert_menu {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         background-color: $vert;
+      }
    }
 
-   .titre_logo {
-      display: flex;
-      justify-content: center;
+   .img_bg {
 
       div {
-         margin-top: -10px;
-         color: white;
+         display: flex;
+         position: relative;
+         bottom: 155px;
+         z-index: -1;
+         margin-bottom: -155px;
       }
    }
-}
 
-.jaune_vert_menu {
-   display: flex;
-   justify-content: space-around;
-   height: 50px;
+   .row {
+      display: flex;
 
-   h2 {
-      line-height: 50px;
-      font-size: 20px;
+      .cadre_vert {
+         background-color: $vert;
+         height: 30px;
+         width: 50%;
+      }
+
+      .cadre_jaune {
+         background-color: $jaune;
+         height: 30px;
+         width: 50%;
+      }
    }
 
-   .cadre_jaune_menu {
-      width: 100%;
+   .all_news {
       display: flex;
       justify-content: center;
-      background-color: #F7CB06;
-   }
 
-   img {
-      width: 42px;
-   }
+      .actu_legumes {
+         width: 49%;
 
-   .cadre_vert_menu {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      background-color: #7AB51D;
-   }
-}
+         .news_legumes {
+            display: flex;
+            justify-content: center;
 
-.img_bg {
+            h2 {
+               padding-top: 10px;
+            }
+         }
 
-   div {
-      display: flex;
-      position: relative;
-      bottom: 155px;
-      z-index: -1;
-      margin-bottom: -155px;
-   }
-}
+         .tomates {
+            display: flex;
+            justify-content: center;
+         }
 
-.row {
-   display: flex;
-
-   .cadre_vert {
-      background-color: #7AB51D;
-      height: 30px;
-      width: 50%;
-   }
-
-   .cadre_jaune {
-      background-color: #F7CB06;
-      height: 30px;
-      width: 50%;
-   }
-}
-
-.all_news {
-   display: flex;
-   justify-content: center;
-
-   .actu_legumes {
-      width: 49%;
-
-      .news_legumes {
-         display: flex;
-         justify-content: center;
-
-         h2 {
-            padding-top: 10px;
+         .fete {
+            display: flex;
+            justify-content: center;
          }
       }
 
-      .tomates {
-         display: flex;
-         justify-content: center;
-      }
+      .actu_pain {
+         width: 49%;
 
-      .fete {
-         display: flex;
-         justify-content: center;
-      }
-   }
+         .news_pain {
+            display: flex;
+            justify-content: center;
 
-   .actu_pain {
-      width: 49%;
+            h2 {
+               padding-top: 10px;
+            }
+         }
 
-      .news_pain {
-         display: flex;
-         justify-content: center;
-
-         h2 {
-            padding-top: 10px;
+         .pain {
+            display: flex;
+            justify-content: center;
          }
       }
 
-      .pain {
-         display: flex;
-         justify-content: center;
+      .texte_actu {
+         width: 300px;
+         padding: 5px;
+         text-align: justify;
       }
    }
 
-   .texte_actu {
-      width: 300px;
-      padding: 5px;
-      text-align: justify;
-   }
-}
-
-#legumes {
-   height: 50px;
-   background-color: #7AB51D;
-   overflow: hidden;
-
-   p {
-      width: 110%;
-      display: block;
-      line-height: 50px;
-      color: rgba(255, 255, 255, 0.4);
-      animation-duration: 10s;
-      animation-name: defilementrtl;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-   }
-
-   @keyframes defilementrtl {
-      0% {
-         transform: translate3d(0,0,0);      /* position initiale à droite */
+   @mixin carousel {
+      p {
+         width: 110%;
+         display: block;
+         line-height: 50px;
+         color: rgba(255, 255, 255, 0.4);
+         animation-duration: 10s;
+         animation-name: defilement;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
       }
-      50% {
-         transform: translate3d(-10%,0,0);
-      }
-      100% {
-         transform: translate3d(0,0,0);  /* position finale à gauche */
+
+      @keyframes defilement {
+         0% {
+            transform: translate3d(0,0,0);      /* position initiale à droite */
+         }
+         50% {
+            transform: translate3d(-10%,0,0);
+         }
+         100% {
+            transform: translate3d(0,0,0);  /* position finale à gauche */
+         }
       }
    }
 
@@ -185,7 +186,129 @@ a {
       @return $resultat;
    }
 
-   p:before {
-      content: ajoute(" Légumes de saison -");
+   #legumes {
+      height: 50px;
+      background-color: $vert;
+      overflow: hidden;
+
+      @include carousel;
+
+      p:before {
+         content: ajoute(" Légumes de saison -");
+      }
+   }
+
+   .all_legumes {
+      display: flex;
+
+      .jacques {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         padding-left: 10%;
+         padding-right: 10%;
+         padding-top: 5%;
+         width: 50%;
+
+         .jacques_title {
+            text-align: center;
+
+            h2 {
+               background-color: $vert;
+            }
+         }
+
+         .jacques_image {
+            padding-top: 5%;
+            padding-bottom: 5%;
+         }
+
+         .jacques_text {
+            text-align: left;
+         }
+      }
+
+      .carousel_legume {
+         width: 50%;
+         background-image: url("../img/slide-legume1.jpg");
+         background-repeat: round;
+         div {
+            text-align: center;
+            position: relative;
+
+            h5 {
+               position: absolute;
+               top: 50px;
+               right: 50px;
+               color: white;
+               background-color: $vert;
+               width: 200px;
+               font-size: 18px;
+            }
+         }
+      }
+   }
+
+   #pain {
+      height: 50px;
+      background-color: $jaune;
+      overflow: hidden;
+
+      @include carousel;
+
+      p:before {
+         content: ajoute(" Pain au levain -");
+      }
+   }
+}
+
+.all_pain {
+   display: flex;
+
+   .jean {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 5%;
+      width: 50%;
+
+      .jean_title {
+         text-align: center;
+
+         h2 {
+            background-color: $jaune;
+         }
+      }
+
+      .jean_image {
+         padding-top: 5%;
+         padding-bottom: 5%;
+      }
+
+      .jean_text {
+         text-align: left;
+      }
+   }
+
+   .carousel_pain {
+      width: 50%;
+      background-image: url("../img/slide-pain1.jpg");
+      background-repeat: round;
+      div {
+         text-align: center;
+         position: relative;
+
+         h5 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            color: white;
+            background-color: $jaune;
+            width: 200px;
+            font-size: 18px;
+         }
+      }
    }
 }
